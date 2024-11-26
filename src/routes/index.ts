@@ -1,14 +1,14 @@
-import { lazy } from "react"
-import { HOME_PAGE } from "./constants"
+import { lazy } from 'react';
+import { HOME_PAGE } from './constants';
 
 interface RouteTypes {
-  path: string
-  title: string
-  component: React.LazyExoticComponent<() => JSX.Element>
-  allow: boolean
+  path: string;
+  title: string;
+  component: React.LazyExoticComponent<() => JSX.Element>;
+  allow: boolean;
 }
 
-const HomePage = lazy(() => import("@/pages/home"))
+const HomePage = lazy(() => import('@/pages/home'));
 
 const coreRoutes: RouteTypes[] = [
   {
@@ -18,6 +18,6 @@ const coreRoutes: RouteTypes[] = [
     // Default true, make it false if you want the route to be protected
     allow: true,
   },
-]
+];
 
-export default coreRoutes
+export default coreRoutes;

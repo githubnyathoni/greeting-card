@@ -3,12 +3,12 @@ import {
   createRoutesFromElements,
   Route,
   RouterProvider,
-} from "react-router-dom"
-import routes from "@/routes"
-import { Suspense } from "react"
-import DefaultLayout from "./components/layouts/default-layout"
+} from 'react-router-dom';
+import routes from '@/routes';
+import { Suspense } from 'react';
+import DefaultLayout from './components/layouts/default-layout';
 
-console.log(routes)
+console.log(routes);
 function App() {
   return (
     <RouterProvider
@@ -20,7 +20,7 @@ function App() {
                 ({ path, component: Component, allow }) =>
                   allow && (
                     <Route
-                      index={path === "/"}
+                      index={path === '/'}
                       key={path}
                       path={path}
                       element={
@@ -37,7 +37,7 @@ function App() {
         )
       )}
     />
-  )
+  );
 }
 
-export default App
+export default App;

@@ -1,12 +1,11 @@
-import { Outlet } from "react-router-dom"
+import { Outlet } from 'react-router-dom';
 
-// Where you set layout app such as header, sidebar, etc.
 function DefaultLayout() {
   return (
-    <div>
+    <div className='container mx-auto'>
       <Outlet></Outlet>
     </div>
-  )
+  );
 }
 
-export default DefaultLayout
+export default DefaultLayout;
