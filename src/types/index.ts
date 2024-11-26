@@ -1,0 +1,1 @@
+// all application shared type
