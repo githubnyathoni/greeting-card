@@ -141,25 +141,6 @@ function GreetingCardForm() {
                 {from}
               </text>
             </svg>
-            {/* <img
-              src={image}
-              alt='Greeting Card'
-              className='absolute inset-0 w-full h-full object-cover'
-            /> */}
-            {/* <div
-              className='absolute
-              top-[25%] md:top-[29%] left-[46%] w-[30%]
-              text-md min-[400px]:text-lg sm:text-2xl md:text-xl lg:text-2xl xl:text-5xl
-              font-bold text-amber-950 font-mutually-beneficial'
-            >
-              {dear}
-            </div>
-            <div className='absolute top-[40%] left-[10%] w-[80%] text-sm text-white text-center drop-shadow-md'>
-              {message}
-            </div>
-            <div className='absolute bottom-[10%] left-[10%] w-[80%] text-xs md:text-sm font-medium text-white text-right drop-shadow-md'>
-              {from}
-            </div> */}
           </div>
         </div>
       )}
@@ -203,13 +184,14 @@ function GreetingCardForm() {
             )}
           </div>
           <div className='flex flex-col gap-2 mt-2'>
-            <label>Dear</label>
+            <label htmlFor='dear'>Dear</label>
             <input
               type='text'
               className='border rounded p-2'
               value={dear}
               onChange={(e) => setDear(e.target.value)}
               maxLength={14}
+              id='dear'
             />
             {errors.dear && (
               <p className='text-red-500 text-xs'>{errors.dear}</p>
