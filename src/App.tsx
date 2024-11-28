@@ -6,9 +6,8 @@ import {
 } from 'react-router-dom';
 import routes from '@/routes';
 import { Suspense } from 'react';
-import DefaultLayout from './components/layouts/default-layout';
+import DefaultLayout from './components/layouts/DefaultLayout';
 
-console.log(routes);
 function App() {
   return (
     <RouterProvider

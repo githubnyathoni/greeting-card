@@ -8,7 +8,7 @@ interface RouteTypes {
   allow: boolean;
 }
 
-const HomePage = lazy(() => import('@/pages/home'));
+const HomePage = lazy(() => import('@/pages/home/HomePage'));
 
 const coreRoutes: RouteTypes[] = [
   {
