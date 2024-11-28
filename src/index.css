@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Mutually-Beneficial';
+  src: url('/fonts/Mutually_Beneficial.ttf');
+}
+
 body {
   background-color: rgb(241 245 249);
 }
